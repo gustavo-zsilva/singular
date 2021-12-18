@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>Yeah, Its Big Brain Time</title>
+        <title>Singular</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
