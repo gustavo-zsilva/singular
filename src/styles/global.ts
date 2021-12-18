@@ -7,9 +7,9 @@ export const globalStyles = globalCss({
         boxSizing: 'border-box',
     },
     'body': {
-        maxWidth: '100rem',
+        maxWidth: '90rem',
         margin: 'auto',
-        backgroundColor: '#151718',
+        backgroundColor: '$baseColor',
         color: '#ECEDEE',
         fontFamily: 'Ubuntu',
     }
