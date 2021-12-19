@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "../../styles/theme";
 
 export const Container = styled('div', {
     display: 'grid',
@@ -18,12 +18,26 @@ export const Container = styled('div', {
         'strong': {
             fontSize: '3.5rem',
         },
-
+        
         'span': {
             fontWeight: 'bold',
             fontSize: '1.5rem',
+        },
+
+        '@sm': {
+            textAlign: 'center',
+        },
+        '@md': {
+            textAlign: 'left',
         }
     },
+
+    '@sm': {
+        gridTemplateAreas: `'Header Header' 'Message Message'`
+    },
+    '@md': {
+        gridTemplateAreas: `'Header Header' 'Message Hero'`
+    }
 })
 
 export const LandingMessage = styled('div', {
@@ -33,4 +47,12 @@ export const LandingMessage = styled('div', {
 
 export const Hero = styled('div', {
     gridArea: 'Hero',
+
+    '@sm': {
+        width: '0',
+    },
+    '@md': {
+        width: 'initial'
+    }
+    
 })
