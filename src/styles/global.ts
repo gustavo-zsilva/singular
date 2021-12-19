@@ -12,5 +12,9 @@ export const globalStyles = globalCss({
         backgroundColor: '$baseColor',
         color: '#ECEDEE',
         fontFamily: 'Ubuntu',
+
+        '@media (max-width: 1600px)': {
+            margin: '0 2rem'
+        }
     }
 })
