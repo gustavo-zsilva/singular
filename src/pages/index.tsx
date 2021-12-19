@@ -1,6 +1,9 @@
 import Head from 'next/head'
+
 import { Main } from '../components/Main'
 import { About } from '../components/About'
+import { Footer } from '../components/Footer'
+
 import { Container } from '../styles/Home'
 
 export default function Home() {
@@ -13,6 +16,7 @@ export default function Home() {
 
       <Main />
       <About />
+      <Footer />
     </Container>
   )
 }
